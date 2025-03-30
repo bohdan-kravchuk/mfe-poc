@@ -9,6 +9,9 @@ const devConfig = {
     port: 8080,
     historyApiFallback: true
   },
+  output: {
+    publicPath: 'http://localhost:8080/'
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: 'container',
