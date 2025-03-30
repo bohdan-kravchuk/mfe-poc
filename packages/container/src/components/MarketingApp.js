@@ -13,7 +13,8 @@ const MarketingApp = () => {
         if (history.location.pathname !== nextPathname) {
           history.push(nextPathname);
         }
-      }
+      },
+      initialPath: history.location.pathname
     });
 
     history.listen(onParentNavigate);
